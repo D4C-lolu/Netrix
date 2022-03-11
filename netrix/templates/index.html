@@ -1,0 +1,148 @@
+{% extends "base.html" %} {% load static %} {% block title %} home {% endblock title %} {% block others %}
+
+{% endblock others %} {% block content %}
+
+<div class="absolute inset-0 h-full bg-black w-full opacity-50"></div>
+
+<section
+  class="h-screen grid place-items-center pt-48 w-screen bg-black bg-opacity-75 showcase border-gray-600 border-b-8 bg-no-repeat w-full"
+  style="background-image: url('{% static 'images/background_netflix.jpg' %}');"
+>
+  <div class="w-full">
+    <header class="text-gray-100 grid place-items-center w-4/5 mx-auto" >
+      <h1 class="font-bold text-4xl md:text-6xl text-center">Unlimited movies,TV shows and more. </h1>
+      <p class="py-2 font-semibold text-lg md:text-xl text-center">Watch anywhere. Cancel anytime</p>
+      <p class="py-2 font-semibold text-lg md:text-xl text-center">
+        Ready to watch? Enter your email to create or restart your membership
+      </p>
+    </header>
+    <form class="mx-auto w-4/5 grid place-items-center gap-4">
+      <input
+        type="email"
+        placeholder="Email address"
+        name="email"
+        id="email"
+        class="md:py-5 py-4 px-2 placeholder-gray-500 rounded-tl-sm rounded-bl-sm outline-none  text-gray-900 bg-gray-50 block w-8/12 md:w-3/4 "
+      />
+      <a href='{% url "account_signup" %}' class='md:w-1/4'>
+        <button class="bg-red-600 text-white  font-medium md:font-normal flex justify-center items-center py-4 px-5 w-full md:px-0 rounded-br-sm rounded-tr-sm md:text-2xl">
+          <span>Get Started  > </span>
+          </span>
+        </button>
+      </a>
+    </form>
+  </div>
+</section>
+
+<section class="flex flex-col md:flex-row items-center text-white  border-gray-100 border-b-8" style="min-height: 70vh;">
+  <div class="md:w-1/2 grid place-items-center  text-center md:text-left p-5 md:p-10 ">
+      <h2 class="md:text-5xl text-4xl font-semibold mb-4">
+          Enjoy on your TV.
+      </h2>
+      <h5 class="md:text-2xl text-xl ">
+          Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
+      </h5>
+  </div>
+  <div class='md:w-1/2 flex justify-center items-center'>
+      <img src="{% static 'images/tv.png' %}" class="w-8/12" alt="TV">
+  </div>
+</section>
+
+<section class="flex flex-col md:flex-row items-center text-white border-gray-100 border-b-8" style="min-height: 70vh;">
+  <div class='md:w-1/2 flex justify-center items-center '>
+      <img src="{% static 'images/mobile-0819.jpg' %}" class="w-8/12" alt="mobile">
+  </div>
+
+  <div class="md:w-1/2 grid place-items-center text-center md:text-left p-5 md:p-10">
+      <h2 class="md:text-5xl text-4xl font-semibold mb-4">
+          Download your shows to watch offline.
+      </h2>
+      <h5 class="md:text-2xl text-xl">
+          Save your favorites easily and always have something to watch.
+      </h5>
+  </div>
+  
+</section>
+
+<section class="flex flex-col md:flex-row items-center text-white border-gray-100 border-b-8" style="min-height: 70vh;">
+  <div class="md:w-1/2 grid place-items-center text-center md:text-left p-5 md:p-10">
+      <h2 class="md:text-5xl text-4xl font-semibold mb-4">
+          Create profiles for kids.
+      </h2>
+      <h5 class="md:text-2xl text-xl">
+          Send kids on adventures with their favorite characters in a space made just for them—free with your membership.
+      </h5>
+  </div>
+  <div class='md:w-1/2 flex justify-center items-center'>
+      <img src="{% static 'images/netflix_kid.png' %}" class="w-8/12" alt="kids">
+  </div>
+</section>
+
+<section class="flex flex-col items-center text-white md:py-24 py-6 border-gray-100  border-b-8" style="min-height: 70vh; " id="faq">
+  <div class="md:w-screen grid place-items-center text-center p-5 md:p-10 ">
+      <h2 class="md:text-5xl text-4xl font-semibold sm:mb-4 mb-2">
+          Frequently Asked Questions
+      </h2>
+      <div class="grid place-items-center gap-4 sm:pt-12 text-white pt-4 w-screen">
+        <div class="flex justify-between items-center bg-gray-700 sm:w-2/3 w-screen h-16 rounded-lg text-2xl md:text-3xl ">
+          <div class="text-white font-semibold pl-6">
+            What is Netflix?
+          </div>
+          <span class="pr-12 font-bold">+</span>
+        </div>
+        <div class="flex justify-between items-center bg-gray-700 sm:w-2/3 w-screen h-16 rounded-lg text-2xl md:text-3xl ">
+          <div class="text-white font-semibold pl-6">
+            How much does Netflix cost?
+          </div>
+          <span class="pr-12 font-bold">+</span>
+        </div>
+        <div class="flex justify-between items-center bg-gray-700 sm:w-2/3 w-screen h-16 rounded-lg text-2xl md:text-3xl ">
+          <div class="text-white font-semibold pl-6">
+            Where Can I Watch?
+          </div>
+          <span class="pr-12 font-bold">+</span>
+        </div>
+        <div class="flex justify-between items-center bg-gray-700 sm:w-2/3 w-screen h-16 rounded-lg text-2xl md:text-3xl ">
+          <div class="text-white font-semibold pl-6">
+            How do I cancel?
+          </div>
+          <span class="pr-12 font-bold">+</span>
+        </div>
+        <div class="flex justify-between items-center bg-gray-700 sm:w-2/3 w-screen h-16 rounded-lg text-2xl md:text-3xl ">
+          <div class="text-white font-semibold pl-6">
+            What Can I watch on Netflix?
+          </div>
+          <span class="pr-12 font-bold">+</span>
+        </div>
+        <div class="flex justify-between items-center bg-gray-700 sm:w-2/3 w-screen h-16 rounded-lg text-2xl md:text-3xl ">
+          <div class="text-white font-semibold pl-6">
+            Is Netflix good for kids?
+          </div>
+          <span class="pr-12 font-bold">+</span>
+        </div>
+
+    </div>
+  </div>
+  <div class=" flex flex-col justify-center items-center w-full">
+    <h2 class="md:text-3xl text-2xl font-semibold mb-4 text-center w-1/2" >
+      Ready to watch? Enter your email to create or restart your membership.
+  </h2>
+    <form class="mx-auto w-4/5 grid place-items-center gap-4">
+      <input
+        type="email"
+        placeholder="Email address"
+        name="email"
+        id="email"
+        class="md:py-5 py-4 px-2 placeholder-gray-500 rounded-tl-sm rounded-bl-sm outline-none  text-gray-900 bg-gray-50 block w-8/12 md:w-3/4 "
+      />
+      <a href='{% url "account_signup" %}' class='md:w-1/4'>
+        <button class="bg-red-600 text-white  font-medium md:font-normal flex justify-center items-center py-4 px-5 w-full md:px-0 rounded-br-sm rounded-tr-sm md:text-2xl">
+          <span>Get Started  > </span>
+          </span>
+        </button>
+      </a>
+    </form>
+  </div>
+</section>
+
+{% endblock content %}

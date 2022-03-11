@@ -9,6 +9,7 @@ verify_ssl = true
 django = "*"
 black = "*"
 pillow = "*"
+django-allauth = "*"
 
 [requires]
 python_version = "3.8"

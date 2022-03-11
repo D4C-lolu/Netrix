@@ -4,9 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"npx tailwindcss-cli build -i \"./netrix/static/css/input.css\" -o \"./netrix/static/css/styles.css\" ",
+    "change":"npx tailwindcss -i \"./netrix/static/css/input.css\" -o \"./netrix/static/css/styles.css\" --watch"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  }
 }
